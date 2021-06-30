@@ -10,10 +10,51 @@
     <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
-    <div>
-        <p>
-            Hello World
-        </p>
-    </div>
+    <main>
+        <div>
+            <p> Hello World </p>
+            <a href="https://google.com" target=_blank> Ir para Google</a>
+        </div>
+
+        <div id="lista1">
+            <ul type="square">
+                <li> Item 1</li>
+                <li> Item 2</li>
+            </ul>
+        </div>
+
+        <div id="lista2">
+            <ol type="1">
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ol>
+        </div>
+        <div id="tabela1">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Mes da Atividade </th>
+                        <th> Nome da Atividade </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="1"> Janeiro</td>
+                        <td> Programacao</td>
+                    </tr>
+                    <tr>
+                        <td>Fevereiro</td>
+                        <td rowspan="1">AWS</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total de Atividades</td>
+                        <td>2 Atividades</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
 </body>
 </html>
