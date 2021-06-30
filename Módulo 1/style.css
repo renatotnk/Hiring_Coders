@@ -7,7 +7,22 @@ table, th, td{
     border-collapse: collapse;
 }
 
-#texto1{
-    border: solid 2px red;
+.parent-container{
+    display: flexbox;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 400px;
+    border: 1px solid black;
+    background-color: cadetblue;
+}
+
+.mydiv{
+    background-color: chocolate;
+    padding: 2px 2px;
+    margin: 4px 4px;
+    border: 2px dashed red;
+    color: #0000FF;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 90%;
 }
