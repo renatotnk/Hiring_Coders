@@ -10,51 +10,97 @@
     <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
-    <main>
-        <div>
-            <p> Hello World </p>
-            <a href="https://google.com" target=_blank> Ir para Google</a>
-        </div>
+    <main role="main">
+        <section>
+            <div>
+                <p> Hello World </p>
+                <a href="https://google.com" target=_blank> Ir para Google</a>
+            </div>
 
-        <div id="lista1">
-            <ul type="square">
-                <li> Item 1</li>
-                <li> Item 2</li>
-            </ul>
-        </div>
+            <div class="lista" id="lista1">
+                <ul type="square">
+                    <li> Item 1</li>
+                    <li> Item 2</li>
+                </ul>
+            </div>
 
-        <div id="lista2">
-            <ol type="1">
-                <li>Item 1</li>
-                <li>Item 2</li>
-            </ol>
-        </div>
-        <div id="tabela1">
-            <table>
-                <thead>
-                    <tr>
-                        <th> Mes da Atividade </th>
-                        <th> Nome da Atividade </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="1"> Janeiro</td>
-                        <td> Programacao</td>
-                    </tr>
-                    <tr>
-                        <td>Fevereiro</td>
-                        <td rowspan="1">AWS</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>Total de Atividades</td>
-                        <td>2 Atividades</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
+            <div class="lista" id="lista2">
+                <ol type="1">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ol>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Mes da Atividade </th>
+                            <th> Nome da Atividade </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="1"> Janeiro</td>
+                            <td> Programacao</td>
+                        </tr>
+                        <tr>
+                            <td>Fevereiro</td>
+                            <td rowspan="1">AWS</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total de Atividades</td>
+                            <td>2 Atividades</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+        <br>
+
+        <section>
+            <form action="#" method="POST">
+
+                <label for="campo1"> Nome </label>
+                <input type="text" name="nome" id="campo1"/>
+                <br><br>
+                <label for="campo2"> Interesses de Estudo</label>
+                <select name="interesses" id="campo2"> 
+                    <option value="1"> Inteligencia Artificial</option>
+                    <option value="2"> Investimentos</option>
+                </select>
+                
+                <br><br>
+                <fieldset>
+                    <legend> Interesses de Estudo 2</legend>
+
+                    <label for="campo31"> Inteligencia Artificial</label>
+                    <input type="radio" name="interesse2" value="1" id="campo31"/>   
+                
+                    <label for="campo32"> Investimentos</label>
+                    <input type="radio" name="interesse2" value="2" id="campo32"/>
+                </fieldset>
+
+                <br>
+                <fieldset>
+                    <legend> Interesses de Estudo 3</legend>
+                    <label for="campo41"> Inteligencia Artificial</label>
+                    <input type="checkbox" name="interesse2" value="1" id="campo41"/>   
+                
+                    <label for="campo42"> Investimentos</label>
+                    <input type="checkbox" name="interesse2" value="2" id="campo42"/>
+                </fieldset>
+                <br>
+                
+                <input type="submit" value="Enviar Formulario"/>
+            </form>
+        </section>
+
     </main>
 </body>
 </html>
