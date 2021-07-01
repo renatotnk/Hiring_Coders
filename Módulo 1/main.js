@@ -1,6 +1,8 @@
 //alert("Hello World");
 
 function atualizacao(){
-    var texto1 = document.getElementById("texto1");
-    texto1.innerText = "OMEGALUL";
+    var descricao = document.getElementById("descricao");
+    console.log(descricao)
+    descricao.innerText = "OMEGALUL";
+    descricao.style.color = "#00FF00";
 }
